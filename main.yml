@@ -2,13 +2,13 @@
 - hosts: all
   connection: local
 
-vars_prompt:
-  - name: mas_email
-  - prompt: "App Store user name?"
-  - private: no
+   vars_prompt:
+    - name: mas_email
+    - prompt: "App Store user name?"
+    - private: no
   
-  - name: mas_password
-  - prompt: "App Store Passwort?"
+    - name: mas_password
+    - prompt: "App Store Passwort?"
 
 
   vars_files:
