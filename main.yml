@@ -2,14 +2,14 @@
 - hosts: all
   connection: local
 
-   vars_prompt:
+  vars_prompt: 
+  
     - name: mas_email
-    - prompt: "App Store user name?"
-    - private: no
+      prompt: "App Store user name?"
+      private: no
   
     - name: mas_password
-    - prompt: "App Store Passwort?"
-
+      prompt: "App Store Passwort?"
 
   vars_files:
     - config.yml
@@ -23,9 +23,9 @@
   roles:
     - role: geerlingguy.homebrew
       tags: ['homebrew']
-    - role: geerlingguy.dotfiles
-      when: configure_dotfiles
-      tags: ['dotfiles']
+#    - role: geerlingguy.dotfiles
+#      when: configure_dotfiles
+#      tags: ['dotfiles']
     - role: geerlingguy.mas
       when: mas_installed_apps
       tags: ['mas']
