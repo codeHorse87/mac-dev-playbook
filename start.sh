@@ -22,8 +22,10 @@ if [ $1 == "uninstall" ]; then
 fi
 
 echo "==========================================="
-echo "Setting up your mac using codeHorse87/setupmac"
+echo "Setting up your mac using codeHorse87/mac-dev-playbook"
 echo "==========================================="
+
+xcode-select --install
 
 sudo easy_install pip
 sudo pip install ansible
