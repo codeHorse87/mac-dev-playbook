@@ -28,7 +28,7 @@ echo "==========================================="
 xcode-select --install
 
 brew install python3
-sudo easy_install pip3
+sudo easy_install pip
 sudo pip3 install ansible
 
 installdir="/tmp/setupmac-$RANDOM"
